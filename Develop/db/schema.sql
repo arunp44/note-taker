@@ -1,6 +1,8 @@
 DROP DATABASE IF EXISTS company;
 CREATE DATABASE company;
 
+use company;
+
 CREATE TABLE department (
     id int NOT NULL,
     name varchar(30) NOT NULL,
@@ -9,7 +11,7 @@ CREATE TABLE department (
 
 CREATE TABLE role (
     id int NOT NULL,
-    titel varchar(30),
+    title varchar(30),
     salery decimal,
     department_id int NOT NULL,
     PRIMARY KEY (ID)
